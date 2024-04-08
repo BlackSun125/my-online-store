@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import RouterCustom from './router.js';
+import { BrowserRouter } from 'react-router-dom';
+import './style/style.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <p1>Khoa Ngo Shop </p1>
-  </React.StrictMode>
+  <BrowserRouter>
+    <RouterCustom />
+  </BrowserRouter>
 );
 
 
